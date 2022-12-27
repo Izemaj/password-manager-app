@@ -90,16 +90,15 @@ def save_data():
     username = username_input.get()
     password = password_input.get()
 
-    # Check if the website and password fields are not empty
+# Check if the website and password fields are not empty
     if len(website)!= 0 and len(password) != 0:
-        # Ask the user if it is okay to save the entered data
+# Ask the user if it is okay to save the entered data
         is_ok = messagebox.askokcancel(title=website, message=f"These are the details you entered :\nEmail/Username: {username}\nPassword:{password}\nIs it okay to save?")
         if is_ok == True:
-            # Save the data to the text file
+# Save the data to the text file
             with open("data.txt", "a") as file:
                 file.write(f"{website} | {username} | {password}\n")
-
-            # Clear the input fields
+# Clear the input fields
             website_input.delete(0, END)
 password_input.delete(0, END)
 else:
