@@ -62,3 +62,20 @@ save_button.grid(row=4, column=1)
 </pre>
 <h3>Run the main loop</h3>
 <pre>window.mainloop()</pre>
+
+<br>
+<br>
+<h2>Using the Password Manager App</h2>
+<p>If you just want to use the Password Manager App without building it from scratch, you can follow these steps:</p>
+<ol>
+  <li>Download the Python script from the source code repository.</li>
+  <li>Make sure you have Python 3 and the required libraries (pyperclip and tkinter) installed on your machine.</li>
+  <li>Open a terminal window and navigate to the directory where you saved the script.</li>
+  <li>Run the script by entering the following command: <code>python password_manager.py</code></li>
+  <li>The GUI for the application will open in a new window.</li>
+  <li>Enter the website, email/username, and password for the account you want to save.</li>
+  <li>Click the "Generate Password" button to generate a random password. The password will be automatically copied to your clipboard and inserted into the password field.</li>
+  <li>Click the "Save" button to save the account details to a file called "data.txt"</li>
+  <li>Repeat the process to save more account details.</li>
+</ol>
+<p><strong>Note:</strong> You can use the "data.txt" file to store your account details in a secure location. Just make sure to keep it in a safe place and not share it with anyone.</p>
