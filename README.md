@@ -7,7 +7,7 @@
 <h2>Getting Started</h2>
 <p>To begin, install the required libraries by running the following command:</p>
 <pre>
-pip install pyperclip tkinter
+pip install pyperclip
 </pre>
 <h2>Designing the GUI</h2>
 <p>We will start by designing the GUI for our password manager application. We will use the Tkinter library to create various widgets such as labels, buttons, and entry fields for the user to interact with the application.</p>
@@ -69,7 +69,7 @@ save_button.grid(row=4, column=1)
 <p>If you just want to use the Password Manager App without building it from scratch, you can follow these steps:</p>
 <ol>
   <li>Download the Python script from the source code repository.</li>
-  <li>Make sure you have Python 3 and the required libraries (pyperclip and tkinter) installed on your machine.</li>
+  <li>Make sure you have Python 3 and the required libraries (pyperclip) installed on your machine.</li>
   <li>Open a terminal window and navigate to the directory where you saved the script.</li>
   <li>Run the script by entering the following command: <code>python password_manager.py</code></li>
   <li>The GUI for the application will open in a new window.</li>
