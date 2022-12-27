@@ -1,4 +1,4 @@
-<h1>Password Generator</h1>
+<h1>Password Manager App with Built-in Password Generator</h1>
 
 <p>This is a simple Python app that serves as a password manager. It allows you to save your login information for various websites, including the website URL, your email or username, and your password. The app also includes a feature to generate random passwords, which can be useful if you want to create a new password for a website but are having trouble coming up with one on your own. The app has a GUI built with Tkinter that makes it easy to use, and it saves your login information to a text file for easy access later.</p>
 
