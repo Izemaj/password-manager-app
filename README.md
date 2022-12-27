@@ -114,31 +114,38 @@ messagebox.showwarning(title="Oops", message="Please do not leave any fields emp
 window = Tk()
 window.title("Password Generator")
 
+# Create a canvas to display the logo image
+canvas = Canvas(width=200, height=200)
+logo = PhotoImage(file="logo.png")
+canvas.create_image(100, 100, image=logo)
+canvas.grid(row=0, column=1)
+
 # Add a label and input field for the website
-website_label = Label(window, text="Website:")
-website_label.grid(row=0, column=0, sticky=W)
-website_input = Entry(window, width=40)
-website_input.grid(row=0, column=1)
+website_label = Label(text="Website:")
+website_label.grid(row=1, column=0)
+website_input = Entry(width=40)
+website_input.grid(row=1, column=1)
 
 # Add a label and input field for the username
-username_label = Label(window, text="Email/Username:")
-username_label.grid(row=1, column=0, sticky=W)
-username_input = Entry(window, width=40)
-username_input.grid(row=1, column=1)
+username_label = Label(text="Email/Username:")
+username_label.grid(row=2, column=0)
+username_input = Entry(width=40)
+username_input.grid(row=2, column=1)
+
 
 # Add a label and input field for the password
-password_label = Label(window, text="Password:")
-password_label.grid(row=2, column=0, sticky=W)
-password_input = Entry(window, width=40)
-password_input.grid(row=2, column=1)
+password_label = Label(text="Password:")
+password_label.grid(row=3, column=0)
+password_input = Entry(width=40)
+password_input.grid(row=3, column=1)
 
 # Add a button to generate a new password
 generate_password_button = Button(window, text="Generate Password", command=generate_password)
 generate_password_button.grid(row=3, column=0, sticky=W)
 
 # Add a button to save the data
-save_button = Button(window, text="Save Data", command=save_data)
-save_button.grid(row=3, column=1, sticky=E)
+generate_password_button = Button(text="Generate Password", command=generate_password)
+generate_password_button.grid(row=4, column=0)
 
 # Run the main loop
 window.mainloop()
