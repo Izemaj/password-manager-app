@@ -137,11 +137,11 @@ password_input.grid(row=2, column=1)
 generate_password_button = Button(window, text="Generate Password", command=generate_password)
 generate_password_button.grid(row=3, column=0, sticky=W)
 
-#Add a button to save the data
+# Add a button to save the data
 save_button = Button(window, text="Save Data", command=save_data)
 save_button.grid(row=3, column=1, sticky=E)
 
-#Run the main loop
+# Run the main loop
 window.mainloop()
 </pre>
 
