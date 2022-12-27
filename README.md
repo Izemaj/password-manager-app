@@ -102,7 +102,7 @@ def save_data():
             website_input.delete(0, END)
 password_input.delete(0, END)
 else:
-# Show a warning if the website or password fields are empty
+        # Show a warning if the website or password fields are empty
 messagebox.showwarning(title="Oops", message="Please do not leave any fields empty!")
 </pre>
 
