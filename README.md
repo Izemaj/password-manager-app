@@ -4,18 +4,16 @@
 
 <h2>Prerequisites</h2>
 
-<p>To use this script, you will need to have Python installed on your machine. You will also need to install the following Python packages:</p>
+<p>To use this script, you will need to have Python installed on your machine. You will also need to install the following Python package:</p>
 
 <ul>
-  <li>random</li>
-  <li>tkinter</li>
   <li>pyperclip</li>
 </ul>
-
-<p>You can install these packages using <code>pip</code>, the Python package manager. For example, to install the <code>random</code> package, you can run the following command:</p>
+<p>Tkinter and the Random package are pre-installed with python</p>
+<p>You can install this package using <code>pip</code>, the Python package manager. To install the <code>pyperclip</code> package, you can run the following command:</p>
 
 <pre>
-pip install random
+pip install pyperclip
 </pre>
 
 <h2>How to Use</h2>
