@@ -113,47 +113,39 @@ messagebox.showwarning(title="Oops", message="Please do not leave any fields emp
 <p>Next, we will set up the GUI for the script using Tkinter. First, we will create a new window and add a label and input field for the website. Then, we will add a label and input field for the username. Finally, we will add a label and input field for the password, as well as a "Generate Password" button and a "Save Data" button. You can customize the layout and appearance of the GUI by modifying the arguments passed to the various Tkinter functions.</p>
 <p>To set up the GUI, add the following block of code to your script:</p>
 <pre>
-# Set up the Tkinter GUI
+# Create a new window
 window = Tk()
-window.title("Password Manager")
-window.config(width=500, height=500, padx=20,pady=20)
-Create a canvas to display the logo image
-canvas = Canvas(width=200, height=200)
-logo = PhotoImage(file="logo.png")
-canvas.create_image(100,100, image=logo)
-canvas.grid(row=0, column=1)
+window.title("Password Generator")
 
-Create a label and an input field for the website
-website_label = Label(text="Website: ")
-website_label.grid(row=1,column=0)
-website_label.focus()
+# Add a label and input field for the website
+website_label = Label(window, text="Website:")
+website_label.grid(row=0, column=0, sticky=W)
+website_input = Entry(window, width=40)
+website_input.grid(row=0, column=1)
 
-website_input = Entry(width=35)
-website_input.grid(row=1, column=1, columnspan=2)
+# Add a label and input field for the username
+username_label = Label(window, text="Email/Username:")
+username_label.grid(row=1, column=0, sticky=W)
+username_input = Entry(window, width=40)
+username_input.grid(row=1, column=1)
 
-Create a label and an input field for the username
-username_label = Label(text="Email/Username: ")
-username_label.grid(row=2,column=0)
+# Add a label and input field for the password
+password_label = Label(window, text="Password:")
+password_label.grid(row=2, column=0, sticky=W)
+password_input = Entry(window, width=40)
+password_input.grid(row=2, column=1)
 
-username_input = Entry(width=35)
-username_input.grid(row=2, column=1, columnspan=2)
-username_input.insert(0, "izemajebi2@gmail.com")
+# Add a button to generate a new password
+generate_password_button = Button(window, text="Generate Password", command=generate_password)
+generate_password_button.grid(row=3, column=0, sticky=W)
 
-Create a label and an input field for the password
-password_label = Label(text="Password: ")
-password_label.grid(row=3,column=0)
+#Add a button to save the data
+save_button = Button(window, text="Save Data", command=save_data)
+save_button.grid(row=3, column=1, sticky=E)
 
-password_input = Entry(width=28)
-password_input.grid(row=3, column=1)
-
-Create a button to generate a random password
-generate_password_button = Button(text="Generate Password", command=generate_password)
-generate_password_button.grid(row=3, column=2)
-
-Create a button to save the entered data
-save_button = Button(text="Save", command=save_data)
-save_button.grid(row=4, column=1)
-
-Run the main loop
+#Run the main loop
 window.mainloop()
 </pre>
+
+<h2>Conclusion</h2>
+<p>That's it! You should now have a working password generator app that allows you to generate random passwords and save login information to a text file. You can customize the app by modifying the lists of letters, numbers, and symbols that are used to generate the password, as well as the layout and appearance of the GUI. If you have any questions or need further assistance, feel free to ask.</p>
