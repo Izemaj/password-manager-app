@@ -16,8 +16,11 @@ pip install pyperclip tkinter
 window = Tk()
 window.title("Password Manager")
 window.config(width=500, height=500, padx=20,pady=20)
+</pre>
 <h3>Create a canvas to display the logo image</h3>
+<pre>
 canvas = Canvas(width=200, height=200)
 logo = PhotoImage(file="logo.png")
 canvas.create_image(100,100, image=logo)
 canvas.grid(row=0, column=1)
+</pre>
