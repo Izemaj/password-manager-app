@@ -78,7 +78,7 @@ username_label.grid(row=2,column=0)
 
 username_input = Entry(width=35)
 username_input.grid(row=2, column=1, columnspan=2)
-username_input.insert(0, "izemajebi2@gmail.com")
+username_input.insert(0, "insertemailhere")
 
 # Create a label and an input field for the password
 password_label = Label(text="Password: ")
