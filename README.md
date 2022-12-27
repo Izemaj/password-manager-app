@@ -1,6 +1,6 @@
 <h1>Password Generator</h1>
 
-<p>This is a simple Python script that generates a random password using a combination of letters, numbers, and symbols. It includes a GUI built with Tkinter that allows you to save the generated password and other login information to a text file.</p>
+<p>This is a simple Python app that serves as a password manager. It allows you to save your login information for various websites, including the website URL, your email or username, and your password. The app also includes a feature to generate random passwords, which can be useful if you want to create a new password for a website but are having trouble coming up with one on your own. The app has a GUI built with Tkinter that makes it easy to use, and it saves your login information to a text file for easy access later.</p>
 
 <h2>Prerequisites</h2>
 
@@ -44,7 +44,7 @@ pip install random
 
 <ul>
   <li><code>random</code> for generating random numbers and selecting random elements from lists</li>
-  <li><<li><code>pyperclip</code> for copying the generated password to the clipboard</li>
+  <li><code>pyperclip</code> for copying the generated password to the clipboard</li>
 </ul>
 <p>To import these modules, add the following lines to the top of your script:</p>
 <pre>
